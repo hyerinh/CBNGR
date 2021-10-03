@@ -1,0 +1,37 @@
+{
+  "name": "CBNGR",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.65.1",
+    "react-native-device-info": "^8.3.3",
+    "react-native-dialogflow": "^3.2.2",
+    "react-native-elements": "^3.4.2",
+    "react-native-gifted-chat": "^0.16.3",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-vector-icons": "^8.1.0",
+    "react-native-voice": "^0.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/runtime": "^7.15.4",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^27.2.3",
+    "eslint": "^7.32.0",
+    "jest": "^27.2.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-native-codegen": "^0.0.7",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
