@@ -6,6 +6,8 @@ import {Dialogflow_V2} from 'react-native-dialogflow';
 import { dialogflowConfig } from './env';
 import { ListItem } from 'react-native-elements/dist/list/ListItem';
 
+var url = new Array();
+
 const botAvatar = require('./assets/images/chulbae.png');
 
 const BOT = {
@@ -13,8 +15,6 @@ const BOT = {
   name: '김철배',
   avatar: botAvatar,
 };
-
-var ytlink = new String ('ytlink');
 
 class App extends Component {
 
@@ -180,10 +180,10 @@ class App extends Component {
        data: [{
          title: '전화 거는 방법',
          image: 'https://ifh.cc/g/y3IVdO',
-         ytlink: 'https://youtu.be/Og_bcZ73JJE'
        }
       ],
      };
+     url= 'https://youtu.be/Og_bcZ73JJE'
     }
 
     else if (text == 'how to answer') {
@@ -196,10 +196,10 @@ class App extends Component {
         data: [{
           title: '전화 받는 방법',
           image: 'https://ifh.cc/v-peWAMs',
-          ytlink: 'https://youtu.be/1FsI3OpRrRM'
         }
        ],
       };
+      url= 'https://youtu.be/1FsI3OpRrRM'
      }
 
      else if (text == 'send_message') {
@@ -212,10 +212,10 @@ class App extends Component {
         data: [{
           title: '문자 보내는 방법',
           image: 'https://ifh.cc/v-JsjZ2E',
-          ytlink: 'https://youtu.be/j5M3F0Ei2tw'
         }
        ],
       };
+      url= 'https://youtu.be/j5M3F0Ei2tw'
      }
 
      else if (text == 'check_message') {
@@ -228,10 +228,10 @@ class App extends Component {
         data: [{
           title: '문자 확인하는 방법',
           image: 'https://ifh.cc/v-EKwgxy',
-          ytlink: 'https://youtu.be/dP37Ww1L9jg'
         }
        ],
       };
+      url= 'https://youtu.be/dP37Ww1L9jg'
      }
 
      else if (text == 'set_wifi') {
@@ -244,10 +244,10 @@ class App extends Component {
         data: [{
           title: '와이파이 연결하는 방법',
           image: 'https://ifh.cc/v-6FrvdU',
-          ytlink: 'https://youtu.be/w2yjpFCqa2E'
         }
        ],
       };
+      url= 'https://youtu.be/w2yjpFCqa2E'
      }
 
      else if (text == 'set_data') {
@@ -260,10 +260,10 @@ class App extends Component {
         data: [{
           title: '데이터 연결하는 방법',
           image: 'https://ifh.cc/v-XyvEKJ',
-          ytlink: 'https://youtu.be/MrDAUFW6zT4'
         }
        ],
       };
+      url= 'https://youtu.be/MrDAUFW6zT4'
      }
 
      else if (text == 'app_install') {
@@ -276,10 +276,10 @@ class App extends Component {
         data: [{
           title: '어플 설치하는 방법',
           image: 'https://ifh.cc/v-Vvpe22',
-          ytlink: 'https://youtu.be/w2yjpFCqa2E'
         }
        ],
       };
+      url= 'https://youtu.be/w2yjpFCqa2E'
      }
 
      else if (text == 'app_remove') {
@@ -292,10 +292,10 @@ class App extends Component {
         data: [{
           title: '어플 삭제하는 방법',
           image: 'https://ifh.cc/v-ZkdzDd',
-          ytlink: 'https://youtu.be/AyageZIC1IM'
         }
        ],
       };
+      url= 'https://youtu.be/AyageZIC1IM'
      }
 
     this.setState((previouseState) => ({
@@ -348,7 +348,7 @@ class App extends Component {
               <Button
                 title={item.title}
                 style={{height: 35}}
-                onPress={()=> Linking.openURL(toString(ytlink))}
+                onPress={()=> Linking.openURL(url.toString())}
               />
             </Card>
           ))}
