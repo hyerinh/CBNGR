@@ -13,7 +13,7 @@ Who am I?
 - You know, I'm kind of crazy
 
 <!-- (3) 그림 넣는법: 깃허브 imgs 폴더에 원하는 이미지를 넣고 아래처럼 경로를 지정해주면 됨. 꼭 imgs 폴더일 필요는 없고 형식만 맞춰주면 됨 -->
-[<img src = "./imgs/logo_tave_research.png" width="60%">](https://taveresearch.github.io/) [<img src = "./imgs/logo_tave.png" width="30%">](https://tavewave.github.io/) 
+<img src = "./imgs/logo_tave_research.png" width="60%"> <img src = "./imgs/logo_tave.png" width="30%">
 
 
 <!-- (4) 전체 적인 사용 예시 -->
